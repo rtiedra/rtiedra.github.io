@@ -1,2 +1,2 @@
 # rtiedra.github.io
-- personal homepage repository
+personal homepage repository
