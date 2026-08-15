@@ -8,9 +8,8 @@
 
 <style type="text/css">
      
-a:hover { background: darkblue }
+a:hover { background: darkblue; color: white }   
 a:link { text-decoration: none }
-a:hover { color: white }   
 
 html{ -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
 
@@ -19,7 +18,7 @@ html{ -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adj
 body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
 .clear { clear: both; }
         
-#page-wrap { width: 790px; margin: 40px auto 60px; }
+#page-wrap { width: 790px; margin: 70px auto 60px; }
         
 #pic { float: right; margin: -25px 30px 0 0; }
         
@@ -44,11 +43,44 @@ dd.clear { float: none; margin: 0; height: 15px; }
         
 .social-icons .social-icon { display: inline-flex; }
 
+/* ---------- top navigation ---------- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 32px;
+  background: #F2F2F2;
+}
+
+.site-nav ul { list-style: none;  display: flex; gap: 28px; flex-wrap: wrap; }
+
+.site-nav a{ font: 14px Segoe UI, Sans-Serif; color: darkblue; }
+
+.site-nav a:hover {background: darkblue; color: white}
+
 </style>
 </head>
 
 
 <body>
+
+<header class="site-nav">
+  <span></span>
+  <nav aria-label="Site sections">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="publications.html">PUBLICATIONS</a></li>
+      <li><a href="conferences.html">CONFERENCES</a></li>
+      <li><a href="co-authors.html">CO-AUTHORS</a></li>
+      <li><a href="links.html">LINKS</a></li>
+      <li><a href="cv_tiedra.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
 
 <div id="page-wrap">
     
