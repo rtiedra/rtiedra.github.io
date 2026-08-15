@@ -1,19 +1,21 @@
 <html>
-<p><a href="index.html" style="font-size: 12px;">← Back to Home</a></p>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Links</title>
 
 <meta name="description" content="Links of Rafael Tiedra">
 
-<style type=text/css>
-
-a:hover { background: darkblue }
+<style type="text/css">
+     
+a:hover { background: darkblue; color: white }   
 a:link { text-decoration: none }
-a:hover { color: white }
 
-body { font: 15px Segoe UI, Sans-Serif; line-height: 20px;
-background: url(images/noise.jpg); margin: 20px 0 0 25px; }
+*{ margin: 0; padding: 0; }
+
+body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+.clear { clear: both; }
+        
+#page-wrap { width: 790px; margin: 30px; }
   
 .title { font: 20px Segoe UI, Sans-Serif; }
 
@@ -21,12 +23,50 @@ background: url(images/noise.jpg); margin: 20px 0 0 25px; }
 
 .links { color: blue; }
 
+/* ---------- top navigation ---------- */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+  background: #F2F2F2;
+}
+
+.site-nav ul { list-style: none;  display: flex; gap: 28px; flex-wrap: wrap; }
+
+.site-nav a:hover {background: darkblue; color: white}
+
+.site-nav a{ color: darkblue; }
+
+/* ---------------------- */
+
 </style>
 </head>
+
+<body>
+
+<header class="site-nav">
+  <span></span>
+  <nav aria-label="Site sections">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="publications.html">PUBLICATIONS</a></li>
+      <li><a href="conferences.html">CONFERENCES</a></li>
+      <li><a href="co-authors.html">CO-AUTHORS</a></li>
+      <li><a href="links.html">LINKS</a></li>
+      <li><a href="cv_tiedra.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="page-wrap">
   
 <span class="title">Links&hairsp;:</span>
 
-<p>
+<div style="height: 1em;"></div>
 
 <span class=subtitle>Web Services</span><br>
 <a class=links href="https://webmail.ge.ch" target="_blank" rel="noopener noreferrer">Webmail GE</a><br>
@@ -73,7 +113,6 @@ background: url(images/noise.jpg); margin: 20px 0 0 25px; }
 <a class=links href="https://www.youtube.com/watch?v=8R02NE050Jk" target="_blank" rel="noopener noreferrer">Jiro Dreams Of Sushi</a><br>
 <a class=links href="https://www.best-poems.net/carson_mccullers_poems/when_we_are_lost.html" target="_blank" rel="noopener noreferrer">When We Are Lost</a><br>
 
-
 <br>
 
 <!-- Start of StatCounter Code for Default Guide -->
@@ -97,5 +136,6 @@ alt="website statistics"></a></div></noscript>
 
 <!-- End of StatCounter Code for Default Guide -->
 
+</div>
 </body>
 </html>
