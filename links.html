@@ -19,7 +19,7 @@ html { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-ad
 
 body {font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
 
-/* Navigation bar */
+/* ---------- top navigation ---------- */
 
 .site-nav {
   position: sticky;
@@ -28,20 +28,16 @@ body {font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images
   justify-content: center;
   align-items: center;
   padding: 8px 32px;
-  background: #F2F2F2;
-  z-index: 1000;
+  background: black;
 }
 
-.site-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
-}
+.site-nav ul { list-style: none;  display: flex; gap: 28px; flex-wrap: wrap; }
 
-.site-nav a { color: darkblue; }
+.site-nav a:hover {background: white; color: black; }
 
-.site-nav a:hover { background: darkblue; color: white; }
+.site-nav a{ color: white; }
+
+/* ---------------------- */
 
 /* Page content */
 
