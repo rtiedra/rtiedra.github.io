@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Links</title>
@@ -6,24 +8,18 @@
 <meta name="description" content="Links of Rafael Tiedra">
 
 <style type="text/css">
-     
-a:hover { background: darkblue; color: white }   
-a:link { text-decoration: none }
 
-*{ margin: 0; padding: 0; }
+a:hover { background: darkblue; color: white; }
 
-body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
-.clear { clear: both; }
-        
-#page-wrap { width: 790px; margin: 30px; }
-  
-.title { font: 20px Segoe UI, Sans-Serif; }
+a:link { text-decoration: none; }
 
-.subtitle { font: 17px Segoe UI, Sans-Serif; }
+html { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
 
-.links { color: blue; }
+* { margin: 0; padding: 0; }
 
-/* ---------- top navigation ---------- */
+body {font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+
+/* Navigation bar */
 
 .site-nav {
   position: sticky;
@@ -33,15 +29,31 @@ body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(image
   align-items: center;
   padding: 8px 32px;
   background: #F2F2F2;
+  z-index: 1000;
 }
 
-.site-nav ul { list-style: none;  display: flex; gap: 28px; flex-wrap: wrap; }
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
 
-.site-nav a:hover {background: darkblue; color: white}
+.site-nav a { color: darkblue; }
 
-.site-nav a{ color: darkblue; }
+.site-nav a:hover { background: darkblue; color: white; }
 
-/* ---------------------- */
+/* Page content */
+
+.page-content { margin: 30px 0 0 30px; }
+
+.title { font: 20px Segoe UI, Sans-Serif; }
+
+.links { color: blue; }
+
+.coauthors { margin-top: 10px; padding-left: 25px; }
+
+.coauthors li { margin-bottom: 12px; }
 
 </style>
 </head>
@@ -49,7 +61,6 @@ body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(image
 <body>
 
 <header class="site-nav">
-  <span></span>
   <nav aria-label="Site sections">
     <ul>
       <li><a href="index.html">HOME</a></li>
@@ -62,8 +73,8 @@ body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(image
   </nav>
 </header>
 
-<div id="page-wrap">
-  
+<main class="page-content">
+
 <span class="title">Links&hairsp;:</span>
 
 <div style="height: 1em;"></div>
@@ -115,6 +126,8 @@ body { font: 15px Segoe UI, Sans-Serif; line-height: 24px; background: url(image
 
 <br>
 
+</main>
+
 <!-- Start of StatCounter Code for Default Guide -->
 
 <script type="text/javascript">
@@ -127,7 +140,6 @@ document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-
 <noscript><div class="statcounter"><a title="website
 statistics" href="http://statcounter.com/"
 target="_blank"><img class="statcounter"
@@ -136,6 +148,5 @@ alt="website statistics"></a></div></noscript>
 
 <!-- End of StatCounter Code for Default Guide -->
 
-</div>
 </body>
 </html>
