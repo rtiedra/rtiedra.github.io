@@ -42,8 +42,18 @@ dd.clear { float: none; margin: 0; height: 15px; }
 .italic_link { font: 15px Segoe UI, Sans-Serif; color: darkblue; font-style: italic;  }
         
 .link { font: 18px Segoe UI, Sans-Serif; color: darkblue; }
-        
+
+/* ---------- social icons ---------- */
+
 .social-icons .social-icon { display: inline-flex; }
+
+.social-icons .social-icon { display: inline-flex; transition: transform 0.1s ease, filter 0.1s ease; }
+
+.social-icons .social-icon:hover {
+background: none;
+transform: translateY(-4px) scale(1.15);
+filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+}
 
 /* ---------- top navigation ---------- */
 
